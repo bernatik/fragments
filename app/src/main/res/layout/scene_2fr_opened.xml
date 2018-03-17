@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/frame2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clipChildren="false"
+        android:background="@color/colorPrimary"
+        android:onClick="goTo2FrOpenedScene" >
+
+        <EditText
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:hint="Login" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/login"
+            android:hint="Password" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/password"
+            android:text="SIGN IN" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frame3"
+        android:layout_width="50dp"
+        android:clipChildren="false"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="goTo3FrOpenedScene" />
+
+</LinearLayout>
